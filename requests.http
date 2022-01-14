@@ -8,12 +8,34 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-  "name": "Six Line Wrasse",
-  "price": 14,
-  "image_url": "sixlinewrasssssy.jpeg"
+  "name": "DRAGON GROUPER",
+  "price": 4000,
+  "image_url": "https://gintai.files.wordpress.com/2020/04/image-3-2.jpg?w=584",
+  "description": "Likes to nibble on any toes dangling in the water off of piers"
 }
+
 
 ###
 
+
 # show
 GET http://localhost:3000/products
+
+
+###
+
+
+# update
+PATCH http://localhost:3000/products/3
+Content-Type: application/json
+
+{
+  "description": "Red Corris Wrasse"
+}
+
+
+###
+
+
+# delete
+DELETE http://localhost:3000/products/9
