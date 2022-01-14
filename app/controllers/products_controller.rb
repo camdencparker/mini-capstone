@@ -10,4 +10,13 @@ class ProductsController < ApplicationController
     render json: show
   end
 
+  def create
+    fish = Product.new(
+      name: params[:name],
+      price: params[:price],
+      image_url: params[:image_url]
+    )
+    fish.save
+    render json: fish.as_json
+  end
 end

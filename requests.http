@@ -3,5 +3,17 @@ GET http://localhost:3000/products
 
 ###
 
+# create
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "Six Line Wrasse",
+  "price": 14,
+  "image_url": "sixlinewrasssssy.jpeg"
+}
+
+###
+
 # show
-GET http://localhost:3000/products/3
+GET http://localhost:3000/products
